@@ -24,7 +24,7 @@
 				<div class="container">
 						
 					<!-- Logo -->
-						<h1><a href="#" id="logo">Untitled</a></h1>
+						<h1><a href="#" id="logo">FAKE IRS</a></h1>
 					
 					<!-- Nav -->
 						<nav id="nav">
@@ -51,7 +51,7 @@
 								</li>
 								<li><a href="left-sidebar.html">Tax Information</a></li>
 								<li><a href="right-sidebar.html">Account</a></li>
-								<li><a href="no-sidebar.html">Login</a></li>
+								<li><a href="login.html">Login</a></li>
                                 <li><a href="no-sidebar.html">Sign up</a></li>
 							</ul>
 						</nav>
@@ -64,79 +64,90 @@
 				<div class="container">
 					<section>
 						<header class="major">
-						  <h2>Login page</h2>
-						  <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+						  <h2>Sign Up</h2>
 						</header>
-						<p>Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Donec nonummy magna quis risus. Quisque eleifend. Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit.</p>
-						<p>Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus.</p>
-						<p>Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus. Quisque eleifend. Phasellus tempor vehicula justo. Aliquam lacinia metus ut elit. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis nec, leo. Fusce odio. Etiam arcu dui, faucibus eget, placerat vel, sodales eget, orci. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna quis risus.</p>
+						<form id="sigmup" name="signup" method="post">
+                        	<label for="fname">First Name:<br></label>
+              				<input name="fname" type="input" required id="fname">
+                            <label for="lname"><br>Last Name:<br></label>
+              				<input name="lname" type="input" required id="lname">
+						  	<label for="e-mail"><br>E-mail:<br></label>
+              				<input name="e-mail" type="email" required id="e-mail">
+                            <label for="password">Password:<br></label>
+              				<input type="password" name="password" id="password">
+                            <label for="Cpassword">Conform Password:<br></label>
+              				<input type="password" name="Cpassword" id="Cpassword">
+                            <label for="date">Date of Birth:<br></label>
+                            <input type="date">
+                            <label for="ssc"><br>Socal Soricity number:<br></label>
+              				<input type="password" name="ssc" id="ssc">
+                            <label for="add1">Address 1:<br></label>
+              				<input type="input" name="address" id="add1">
+                            <label for="add2"><br>Addresss 2:<br></label>
+              				<input type="input" name="address" id="add2">
+                            <label for="city"><br>City:<br></label>
+              				<input type="input" name="city" id="city">
+                            <label for="zip"><br>Zip Code:<br></label>
+              				<input type="input" name="zip" id="zip">
+                            <label for="state"><br>State:<br></label>
+                            <select>
+                              <option value="AL">Alabama</option>
+                              <option value="AK">Alaska</option>
+                              <option value="AZ">Arizona</option>
+                              <option value="AR">Arkansas</option>
+                              <option value="CA">California</option>
+                              <option value="CO">Colorado</option>
+                              <option value="CT">Connecticut</option>
+                              <option value="DE">Delaware</option>
+                              <option value="DC">District Of Columbia</option>
+                              <option value="FL">Florida</option>
+                              <option value="GA">Georgia</option>
+                              <option value="HI">Hawaii</option>
+                              <option value="ID">Idaho</option>
+                              <option value="IL">Illinois</option>
+                              <option value="IN">Indiana</option>
+                              <option value="IA">Iowa</option>
+                              <option value="KS">Kansas</option>
+                              <option value="KY">Kentucky</option>
+                              <option value="LA">Louisiana</option>
+                              <option value="ME">Maine</option>
+                              <option value="MD">Maryland</option>
+                              <option value="MA">Massachusetts</option>
+                              <option value="MI">Michigan</option>
+                              <option value="MN">Minnesota</option>
+                              <option value="MS">Mississippi</option>
+                              <option value="MO">Missouri</option>
+                              <option value="MT">Montana</option>
+                              <option value="NE">Nebraska</option>
+                              <option value="NV">Nevada</option>
+                              <option value="NH">New Hampshire</option>
+                              <option value="NJ">New Jersey</option>
+                              <option value="NM">New Mexico</option>
+                              <option value="NY">New York</option>
+                              <option value="NC">North Carolina</option>
+                              <option value="ND">North Dakota</option>
+                              <option value="OH">Ohio</option>
+                              <option value="OK">Oklahoma</option>
+                              <option value="OR">Oregon</option>
+                              <option value="PA">Pennsylvania</option>
+                              <option value="RI">Rhode Island</option>
+                              <option value="SC">South Carolina</option>
+                              <option value="SD">South Dakota</option>
+                              <option value="TN">Tennessee</option>
+                              <option value="TX">Texas</option>
+                              <option value="UT">Utah</option>
+                              <option value="VT">Vermont</option>
+                              <option value="VA">Virginia</option>
+                              <option value="WA">Washington</option>
+                              <option value="WV">West Virginia</option>
+                              <option value="WI">Wisconsin</option>
+                              <option value="WY">Wyoming</option>
+                     	 </select> <br>
+                         <input type="submit">  
+					  </form>
 					</section>
-				</div>
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-				<div class="container">
-
-					<!-- Lists -->
-						<div class="row">
-							<div class="8u">
-								<section>
-									<header class="major">
-										<h2>Donec dictum metus</h2>
-										<span class="byline">Quisque semper augue mattis wisi maecenas ligula</span>
-									</header>
-									<div class="row">
-										<section class="6u">
-											<ul class="default">
-												<li><a href="#">Pellentesque elit non gravida blandit.</a></li>
-												<li><a href="#">Lorem ipsum dolor consectetuer elit.</a></li>
-												<li><a href="#">Phasellus nibh pellentesque congue.</a></li>
-												<li><a href="#">Cras vitae metus aliquam  pharetra.</a></li>
-											</ul>
-										</section>
-										<section class="6u">
-											<ul class="default">
-												<li><a href="#">Pellentesque elit non gravida blandit.</a></li>
-												<li><a href="#">Lorem ipsum dolor consectetuer elit.</a></li>
-												<li><a href="#">Phasellus nibh pellentesque congue.</a></li>
-												<li><a href="#">Cras vitae metus aliquam  pharetra.</a></li>
-											</ul>
-										</section>
-									</div>
-								</section>
-							</div>
-							<div class="4u">
-								<section>
-									<header class="major">
-										<h2>Donec dictum metus</h2>
-										<span class="byline">Mattis wisi maecenas ligula</span>
-									</header>
-									<ul class="contact">
-										<li>
-											<span class="address">Address</span>
-											<span>1234 Somewhere Road #4285 <br />Nashville, TN 00000</span>
-										</li>
-										<li>
-											<span class="mail">Mail</span>
-											<span><a href="#">someone@untitled.tld</a></span>
-										</li>
-										<li>
-											<span class="phone">Phone</span>
-											<span>(000) 000-0000</span>
-										</li>
-									</ul>	
-								</section>
-							</div>
-						</div>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-						</div>
-
-				</div>
-			</div>
-
+                    
+                </div>
+			</div>	
 	</body>
 </html>
