@@ -7,7 +7,20 @@
 
 <body>
 <?php 
-include 'db-connect.php';
+$servername = "xo7.x10hosting.com";
+$username = "fakeirsx";
+$password = "sam100292";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=fakeirsx_irsdata", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully"; 
+    }
+catch(PDOException $e)
+    {
+    echo "Connection failed: " . $e->getMessage();
+    }
 
 $link = mysqli_connect("localhost","root","password")  or die("failed to connect to server !!");
 mysqli_select_db($link,"all_sports");
