@@ -18,6 +18,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body class="no-sidebar">
+    
 
 		<!-- Header -->
 			<div id="header">
@@ -25,7 +26,7 @@
 						
 					<!-- Logo -->
 						<h1><a href="#" id="logo">FAKE IRS</a></h1>
-                        <h1><a href="#" id="logo">Sign Up</a></h1>
+                        <h1><a href="#" id="signup">Sign Up</a></h1>
 					
 					<!-- Nav -->
 						<nav id="nav">
@@ -39,13 +40,13 @@
                                             <ul>
 												<li><a href="#">Individual Filing</a>
                                                 	<ul>
-                                                    	<li><a href="#">Single</a><li>
+                                                    	<li><a href="#">Single</a></li>
                                                         <li><a href="#">Joint Filing</a></li>                                              		</ul>
                                                 </li>												
 												<li>
                                                 	<a href="#">Business Filing</a>
                                                 	<ul>
-                                                    	<li><a href="#">Corporate</a><li>
+                                                    	<li><a href="#">Corporate</a></li>
                                                         <li><a href="#">Small/Minority Business</a></li>                                              		</ul>
                                                 </li>
 											</ul>
@@ -63,35 +64,37 @@
 			</div>
 
 		<!-- Main -->
-			<div id="main" class="wrapper style1">
+			<div id="main" class="wrapper style">
 				<div class="container">
 					<section>
-						<header class="major">
-						  <h2>Sign Up</h2>
-						</header>
-						<form id="sigmup" name="signup" method="post">
-                        	<label for="fname">First Name:<br></label>
-              				<input name="fname" type="input" required id="fname">
+<form id="sigmup" name="signup" method="post" action="html_form_send.php">
+   	    <label for="fname">First Name:<br></label>
+		<input name="fname" type="text" required id="fname"><span class="error">* <?php 'echo $nameErr;'?></span>
                             <label for="lname"><br>Last Name:<br></label>
-              				<input name="lname" type="input" required id="lname">
-						  	<label for="e-mail"><br>E-mail:<br></label>
-              				<input name="e-mail" type="email" required id="e-mail">
+		<input name="lname" type="text" required id="lname"><span class="error">* <?php 'echo $nameErr;'?></span>
+                            <label for="gender"><br>Gender:<br></label>
+                            <input type="radio" name="sex" value="male" checked>Male 
+                            <input type="radio" name="sex" value="female">Female 
+                            <span class="error">* <?php echo $genderErr;?></span>
+						  	<label for="email"><br>E-mail:<br></label>
+		<input name="email" type="text" required id="email"><span class="error">* <?php 'echo $emailErr;'?></span>
+        <br>
                             <label for="password">Password:<br></label>
-              				<input type="password" name="password" id="password">
+		<input type="password" name="password" id="password"><br>
                             <label for="Cpassword">Conform Password:<br></label>
-              				<input type="password" name="Cpassword" id="Cpassword">
+		<input type="password" name="Cpassword" id="Cpassword"><br>
                             <label for="date">Date of Birth:<br></label>
                             <input type="date">
-                            <label for="ssc"><br>Socal Soricity number:<br></label>
-              				<input type="password" name="ssc" id="ssc">
+                            <label for="ssc"><br>Socal Security number:<br></label>
+		<input type="password" name="ssc" id="ssc"><br>
                             <label for="add1">Address 1:<br></label>
-              				<input type="input" name="address" id="add1">
+		<input type="text" name="address" id="add1">
                             <label for="add2"><br>Addresss 2:<br></label>
-              				<input type="input" name="address" id="add2">
+		<input type="text" name="address" id="add2">
                             <label for="city"><br>City:<br></label>
-              				<input type="input" name="city" id="city">
+		<input type="text" name="city" id="city">
                             <label for="zip"><br>Zip Code:<br></label>
-              				<input type="input" name="zip" id="zip">
+		<input type="text" name="zip" id="zip">
                             <label for="state"><br>State:<br></label>
                             <select>
                               <option value="AL">Alabama</option>
@@ -148,9 +151,10 @@
                      	 </select> <br>
                          <input type="submit">  
 					  </form>
-					</section>
+				  </section>
                     
                 </div>
 			</div>	
+            
 	</body>
 </html>
