@@ -1,24 +1,18 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
 <?php
-$servername = "fakeirs";
+/*
+* db.inc.php
+* These are the DBMS credentials and the database name
+*/
+$hostName = "xo7.x10hosting.com";
+$databaseName = "fakeirsx_irsdata";
 $username = "fakeirsx";
 $password = "sam100292";
-
-// Create connection
-$conn = new mysqli(fakeirs, fakeirsx, sam100292);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
+// Show an error and stop the script
+function showerror()
+{
+if (mysql_error())
+die("Error " . mysql_errno() . " : " . mysql_error());
+else
+die ("Could not connect to the DBMS");
+}
 ?>
-</body>
-</html>
