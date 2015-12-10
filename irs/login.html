@@ -25,7 +25,7 @@
 						
 					<!-- Logo -->
 						<h1><a href="#" id="logo">FAKE IRS</a></h1>
-                        <h1><a href="#" id="logo">Login</a></h1>
+                        <h1><a href="#" id="login">Login</a></h1>
 					
 					<!-- Nav -->
 						<nav id="nav">
@@ -39,13 +39,13 @@
                                             <ul>
 												<li><a href="#">Individual Filing</a>
                                                 	<ul>
-                                                    	<li><a href="#">Single</a><li>
+                                                    	<li><a href="#">Single</a></li>
                                                         <li><a href="#">Joint Filing</a></li>                                              		</ul>
                                                 </li>												
 												<li>
                                                 	<a href="#">Business Filing</a>
                                                 	<ul>
-                                                    	<li><a href="#">Corporate</a><li>
+                                                    	<li><a href="#">Corporate</a></li>
                                                         <li><a href="#">Small/Minority Business</a></li>                                              		</ul>
                                                 </li>
 											</ul>
@@ -61,16 +61,54 @@
 
 				</div>
 			</div>
-			<form method="post" name="Login" class="pull-left" id="Login">
-			  <label for="e-mail">E-mail:</label>
-              <input name="e-mail" type="text" required id="e-mail">
-              <label for="password">Password:</label>
-              <input type="password" name="password" id="password">
-			  <input type="submit">
-    		</form>
+			<form name="htmlform" method="post" action="html_form_send.php">
+<table width="450px">
 
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+ 
+<tr>
+ <td valign="top">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email Address *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+ 
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telephone Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ 
+  
+  
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">
+ </td>
+</tr>
+</table>
+</form>
 
 </body>
-	<body>
-</body>
+	
 </html>
